@@ -1,33 +1,28 @@
-import { Component } from '@angular/core';
-
-      
+import { Component} from '@angular/core';
+        
 @Component({
-    
     selector: 'my-app',
     template: `
-
-    <child-comp  [userName]="name" [userAge]="age"    
-    (onChanged)="onChanged($event)"
-    >
-    <div class="mainbanner"></div>
-   
-                <p>Привет {{name}}</p>
-                </child-comp>   
-                <input type="text" [(ngModel)]="name" />    
-                <input type="number" [(ngModel)]="age" />           
-                <h2>Количество кликов: {{clicks}}</h2>
-                `,
-    styles: [`h2, p {color:#333;}`,
-    `.mainbanner {width:100%; height:100px; background: teal;}
-
-    `]
+    <data-comp></data-comp>
+    <div [ngClass]="currentClasses">
+    
+                    <h1>Hello Angular</h1>
+                    <p>
+                        Angular представляет модульную архитектуру приложения
+                    </p>
+                </div>`,
+    styles: [
+        `.verdanaFont{font-size:13px; font-family:Verdana;}
+        .navyColor{color:navy;}`
+    ]
 })
 export class AppComponent { 
-    name:string="Tom";
-    age:number = 24;
-
-    clicks:number = 0;
-    onChanged(increased:any){
-        increased==true?this.clicks++:this.clicks--;
+     
+    isVerdana = true;
+    isNavy = true;
+ 
+    currentClasses={
+        verdanaFont: this.isVerdana,
+        navyColor: this.isNavy
     }
 }
