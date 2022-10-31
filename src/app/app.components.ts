@@ -10,7 +10,10 @@ import { Component} from '@angular/core';
                     <p>
                         Angular представляет модульную архитектуру приложения
                     </p>
-                </div>`,
+                </div>
+                <footer-comp></footer-comp>
+   
+                `,
     styles: [
         `.verdanaFont{font-size:13px; font-family:Verdana;}
         .navyColor{color:navy;}`
