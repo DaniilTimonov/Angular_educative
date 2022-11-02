@@ -14,6 +14,10 @@
               "main": "src/main.ts",
               "polyfills": "src/polyfills.ts",
               "tsConfig": "tsconfig.json",
+              "assets": [
+                "src/favicon.ico",
+                "src/assets"
+              ],
               "aot": true
             }
           },
@@ -25,5 +29,8 @@
           }
         }
       }},
-    "defaultProject": "helloapp"
+    "defaultProject": "helloapp",
+    "cli": {
+      "analytics": false
+    }
   }
