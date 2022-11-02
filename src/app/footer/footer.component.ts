@@ -1,12 +1,10 @@
 import { Component} from '@angular/core';
-        
+
+
 @Component({
     selector: 'footer-comp',
-    template: `<div class='footerline'><h3>{{footermessage}}</h3></div>`,
-    styles: [`
-    .footerline {color:red;}
-    `]
-
+    template: `<footer class='footerline'[ngStyle]="{'backgroundImage':'url(https://i.postimg.cc/zGbSDdFB/footer.jpg)','width':'1280px','height':'100px'}" >
+    </footer>`
 })
 export class FooterDataComponent{ 
       
