@@ -1,23 +1,15 @@
-import { Component} from '@angular/core';
-
-
-
-        
+import { Component} from '@angular/core';        
 @Component({
     selector: 'my-app',
     template: `
-
  <header-comp></header-comp>
-
-    <main [ngClass]="currentClasses" class='mainstyles'>
-    
-                    <h1>Hello Angular</h1>
-                    <p>
+<main [ngClass]="currentClasses" class='mainstyles'>
+<menu></menu>
+<h1>Hello Angular</h1>
+<p>
                         Angular представляет модульную архитектуру приложения
                     </p>
                 </main>
-             
-
             <footer-comp></footer-comp>
                 `,
     styles: [
