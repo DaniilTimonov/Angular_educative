@@ -5,6 +5,10 @@ import { Component} from '@angular/core';
  <header-comp></header-comp>
 <main [ngClass]="currentClasses" class='mainstyles'>
 <menu></menu>
+
+<router-outlet></router-outlet>
+
+
 <h1>Hello Angular</h1>
 <p>
                         Angular представляет модульную архитектуру приложения
