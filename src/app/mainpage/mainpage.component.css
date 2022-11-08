@@ -1,0 +1,13 @@
+.mainpagecontent{
+    width: 1280px;
+    height: 800px;
+    background-color: #CC6633; 
+    border: 2px solid black;
+background-image: url("/assets/images/mainpagebackground.png");
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    
+}

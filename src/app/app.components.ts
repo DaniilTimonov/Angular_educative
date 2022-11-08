@@ -2,24 +2,28 @@ import { Component} from '@angular/core';
 @Component({
     selector: 'my-app',
     template: `
+<div class="general" >
  <header-comp></header-comp>
 <main [ngClass]="currentClasses" class='mainstyles'>
 <menu></menu>
+<menulinks></menulinks>
 
-<router-outlet></router-outlet>
+<router-outlet class="router"></router-outlet>
 
-
-<h1>Hello Angular</h1>
-<p>
-                        Angular представляет модульную архитектуру приложения
-                    </p>
                 </main>
             <footer-comp></footer-comp>
-                `,
+</div>
+               `,
     styles: [
         `.verdanaFont{font-size:13px; font-family:Verdana;}
         .navyColor{color:navy;}
-        .mainstyles{width:1280px; height:400px; background: #FFCC99;}
+        .mainstyles{width:1280px; height:800px; background: #FFCC99; align-items:center;}
+        .general {
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+              align-items: center;
+          }
         `
     ]
 })

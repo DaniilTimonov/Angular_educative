@@ -1,0 +1,9 @@
+.mainpagecontent{
+    width: 1280px;
+    height: 800px;
+    background-color: #CC6633;
+    border: 2px solid black;
+}
+p {
+    font-size: 20px;
+}

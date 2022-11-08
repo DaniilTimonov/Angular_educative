@@ -1,0 +1,9 @@
+* {
+    font-size: 30px;
+}
+
+.menuform {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}

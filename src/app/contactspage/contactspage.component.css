@@ -1,0 +1,33 @@
+.mainpagecontent{
+    width: 1280px;
+    height: 800px;
+    background-color: #CC6633;
+    border: 2px solid black;
+}
+
+p {
+    font-size: 50px;
+}
+.social_logo_vk {
+    width: 300px;
+    height: 300px;
+    background-image: url("/assets/images/vk.png");
+    background-size: cover;
+
+}
+
+.social_logo_tg {
+    width: 300px;
+    height: 300px;
+    background-image: url("/assets/images/tg.png");
+    background-size: cover;
+
+}
+.socials {
+    display: flex;
+    flex-direction:row;
+}
+
+
+
+

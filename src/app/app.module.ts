@@ -11,12 +11,16 @@ import { MenuComponent } from './menu/menu.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MenulinksComponent } from './menulinks/menulinks.component';
+import { MainpageComponent } from './mainpage/mainpage.component';
+import { AboutpageComponent } from './aboutpage/aboutpage.component';
+import { ContactspageComponent } from './contactspage/contactspage.component';
 
 
    
 @NgModule({
     imports:      [   AppRoutingModule, BrowserModule, FormsModule,  TestDataModule, FooterComponent, HeaderDataComponent, RouterModule],
-    declarations: [ AppComponent, MenuComponent, FirstComponent, SecondComponent],
+    declarations: [ AppComponent, MenuComponent, FirstComponent, SecondComponent, MenulinksComponent, MainpageComponent, AboutpageComponent, ContactspageComponent],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
