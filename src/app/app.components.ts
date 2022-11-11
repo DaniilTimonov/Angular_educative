@@ -7,9 +7,7 @@ import { Component} from '@angular/core';
 <main [ngClass]="currentClasses" class='mainstyles'>
 <menu></menu>
 <menulinks></menulinks>
-
 <router-outlet class="router"></router-outlet>
-
                 </main>
             <footer-comp></footer-comp>
 </div>
@@ -17,7 +15,7 @@ import { Component} from '@angular/core';
     styles: [
         `.verdanaFont{font-size:13px; font-family:Verdana;}
         .navyColor{color:navy;}
-        .mainstyles{width:1280px; height:800px; background: #FFCC99; align-items:center;}
+        .mainstyles{width:1280px; height:1130px; background: #FFCC99; align-items:center;}
         .general {
             display: flex;
             flex-direction:column;

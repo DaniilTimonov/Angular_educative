@@ -5,6 +5,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { SecondComponent } from './second/second.component';
 import { AboutpageComponent } from './aboutpage/aboutpage.component';
 import { ContactspageComponent } from './contactspage/contactspage.component';
+import {AlbumsComponent} from './albums/albums.component';
 
 const routes: Routes = [
 {path:'', redirectTo: 'first', pathMatch: 'full'},  
@@ -13,6 +14,7 @@ const routes: Routes = [
 { path: 'mainpage', component: MainpageComponent},
 { path: 'aboutpage', component: AboutpageComponent},
 { path: 'contactspage', component: ContactspageComponent},
+{ path: 'albumspage', component: AlbumsComponent},
 ];
 
 @NgModule({
